@@ -1,8 +1,8 @@
 {
   "name": "beautybyella-functions",
   "version": "1.0.0",
-  "type": "module",
   "main": "index.js",
+  "type": "commonjs",
   "dependencies": {
     "jsonwebtoken": "^9.0.2"
   }
