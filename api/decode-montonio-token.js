@@ -1,7 +1,10 @@
-import type { VercelRequest, VercelResponse } from 'vercel';
-import jwt from 'jsonwebtoken';
+const jwt = require('jsonwebtoken');
 
-export default function handler(req: VercelRequest, res: VercelResponse) {
+/**
+ * @param {import('vercel').VercelRequest} req 
+ * @param {import('vercel').VercelResponse} res 
+ */
+module.exports = function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
